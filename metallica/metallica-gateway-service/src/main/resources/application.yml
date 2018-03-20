@@ -1,0 +1,16 @@
+zuul:
+  prefix: /api
+  routes:
+    account: 
+      path: /reference/**
+      serviceId: metallica-refdata-service
+        
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: false
+      
+server:
+  port: 8765
+
